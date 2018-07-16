@@ -1,0 +1,10 @@
+.aboutBar {
+    background: linear-gradient(45deg, #7639EF, #1667F4, #54AEF2);
+    opacity: 0.9;
+    border-radius: 0px;
+    border: 0px;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    padding: 30px;
+}
