@@ -1,0 +1,17 @@
+textarea.form-control {
+    border: 3px solid #000000;
+    border-image-source: linear-gradient(-65deg, #7639EF, #1667F4, #54AEF2);
+    border-image-slice: 2;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000000;
+    font-family: 'FontAwesome', sans-serif!important;
+    box-shadow: none;
+    margin-top: 25px;
+}
+
+textarea.form-control:focus {
+    border: 3px solid #87a097;
+    border-radius: 10px;
+    box-shadow: none;
+}

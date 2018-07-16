@@ -6,10 +6,10 @@ import { PasswordForgetLink } from '../PasswordForget';
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
 
-const LogInPage = ({ history }) =>
+const SignInPage = ({ history }) =>
   <div>
     <h1>Log In</h1>
-    <LogInForm history={history} />
+    <SignInForm history={history} />
     <PasswordForgetLink />
     <SignUpLink />
   </div>
@@ -24,7 +24,7 @@ const INITIAL_STATE = {
   error: null,
 };
 
-class LogInForm extends Component {
+class SignInForm extends Component {
   constructor(props) {
     super(props);
 
@@ -41,7 +41,7 @@ class LogInForm extends Component {
       history,
     } = this.props;
 
-    auth.doLogInWithEmailAndPassword(email, password)
+    auth.doSignInWithEmailAndPassword(email, password)
       .then(() => {
         this.setState(() => ({ ...INITIAL_STATE }));
         history.push(routes.HOME);
@@ -88,8 +88,8 @@ class LogInForm extends Component {
   }
 }
 
-export default withRouter(LogInPage);
+export default withRouter(SignInPage);
 
 export {
-  LogInForm,
+  SignInForm,
 };

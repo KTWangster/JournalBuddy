@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import Moment from 'react-moment';
 
 import withAuthorization from '../Session/withAuthorization';
 import { db } from '../../firebase';
+import { Container, Col, Row } from '../Grid';
+import { EntryBox } from '../EntryBox';
 
 class HomePage extends Component {
   constructor(props) {
@@ -23,24 +26,38 @@ class HomePage extends Component {
 
     return (
       <div>
-        <h1>Home</h1>
-        <p>The Home Page is accessible by every signed in user.</p>
-
-        { !!users && <UserList users={users} /> }
+        <Container>
+          <Col size="md-6">
+          <Row>
+            <div>
+            <Moment format="MM/DD/YYYY">{this.props.dateToFormat}</Moment>
+              <p>Daily inspirational quote goes here.</p>
+          </div>
+          </Row>
+          <Row>
+            <EntryBox />
+          </Row>
+          <Row>
+          <button className="btn btn-warning contactBtn">Send</button>
+          </Row>
+          </Col>
+        { !!users }
+        {/* { !!users && <UserList users={users} /> } */}
+        </Container>
       </div>
     );
   }
 }
 
-const UserList = ({ users }) =>
-  <div>
-    <h2>List of Usernames of Users</h2>
-    <p>(Saved on Sign Up in Firebase Database)</p>
+// const UserList = ({ users }) =>
+//   <div>
+//     <h2>List of Usernames of Users</h2>
+//     <p>(Saved on Sign Up in Firebase Database)</p>
 
-    {Object.keys(users).map(key =>
-      <div key={key}>{users[key].username}</div>
-    )}
-  </div>
+//     {Object.keys(users).map(key =>
+//       <div key={key}>{users[key].username}</div>
+//     )}
+//   </div>
 
 const authCondition = (authUser) => !!authUser;
 
