@@ -8,3 +8,13 @@
     color: #fff;
     padding: 30px;
 }
+
+h1 {
+    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 96px;
+    background: -webkit-linear-gradient(90deg, #7639EF, #54AEF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

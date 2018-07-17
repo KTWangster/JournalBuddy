@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=BenchNine|Roboto:100|Yellowtail');
 .app {
-  margin: 20px;
+    margin: 0px;
+    color: #4a4a4a;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+/* .btn-signIn,
+.btn-signOut {
+    color: #ffffff;
+    font-weight: 700;
+    height: 50px;
+    padding: 10px 50px;
+    background-color: #7639ef;
+    border-radius: 10px;
+    border: 20px solid #7639ef;
+}
+
+.btn-signIn:hover,
+.btn-signOut:hover {
+    color: #7639ef;
+    border: 2px solid #7639ef;
+    background-color: transparent;
+} */

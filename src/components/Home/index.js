@@ -4,9 +4,21 @@ import Moment from 'react-moment';
 
 import withAuthorization from '../Session/withAuthorization';
 import { db } from '../../firebase';
+
+import { Chatbot } from '../Chatbot';
 import { Container, Col, Row } from '../Grid';
 import { EntryBox } from '../EntryBox';
 import { Timer } from '../Timer';
+
+// const CountdownCompleted = () => <span>Good Job!</span>;
+// const renderer = ({ minutes, seconds, completed }) => {
+//   if (completed) {
+//     // Render a complete state
+//     return <CountdownCompleted />;
+//   } else {
+//     return <span>{minutes}:{seconds}</span>;
+//   }
+// };
 
 class HomePage extends Component {
   constructor(props) {
@@ -24,18 +36,16 @@ class HomePage extends Component {
   }
 
   
-
   render() {
     const { users } = this.state;
 
     return (
       <div>
         <Container>
-          <Col size="md-6">
+          <Col className="homeleft" size="md-6">
           <Row>
             <div>
             <Moment format="MM/DD/YYYY">{this.props.dateToFormat}</Moment>
-              <p>Daily inspirational quote goes here.</p>
           </div>
           </Row>
           <Row>
@@ -44,10 +54,17 @@ class HomePage extends Component {
             />
           </Row>
           <Row>
+            {/* <Countdown date={Date.now() + 300000}
+            renderer={renderer} /> */}
+            {/* <Countdown date={Date.now() + 10000}
+            renderer={renderer} /> */}
             <Timer />
           </Row>
           <Row>
           </Row>
+          </Col>
+          <Col className="homeRight" size="md-3">
+            <Chatbot />
           </Col>
         { !!users }
         {/* { !!users && <UserList users={users} /> } */}

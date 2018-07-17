@@ -1,0 +1,125 @@
+.navbar {
+    background: #ffffff;
+    opacity: 0.9;
+    border: 0px;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #303030;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    border-color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse {
+    border-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .navbar-right {
+        margin-top: -50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-right {
+        margin-top: -50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-right {
+        margin-top: -55px;
+    }
+}
+
+@media (min-width: 768px) {
+    a.log:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        height: 1em;
+        width: 100%;
+        border-bottom: 2px solid;
+        margin-top: 10px;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0, 1);
+        transform: scale(0, 1);
+    }
+    a.log:hover:after {
+        opacity: 1;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+}
+
+
+/* .navbar-item {
+    color: #303030;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.btn-signIn,
+.btn-signOut {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    height: 50px;
+    padding: 10px 50px 10px 50px;
+    background-color: #7639ef;
+    border-radius: 10px;
+    border: 20px solid #7639ef;
+}
+
+.btn-signIn:hover,
+.btn-signOut:hover {
+    color: #7639ef;
+    border: 2px solid #7639ef
+}
+
+.navbarList>li>a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */

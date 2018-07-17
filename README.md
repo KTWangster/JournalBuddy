@@ -14,3 +14,5 @@
 ``` npm install moment --save ```
 * Countdown timer
 ``` npm install react-countdown-now --save```
+* Flexbox
+``` npm install --save flexbox ```

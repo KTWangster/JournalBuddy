@@ -1,0 +1,19 @@
+.homeLeft {
+    margin-top: 115px;
+    margin-bottom: 200px;
+}
+
+.homeRight {
+    margin-top: 140px;
+    align-content: right;
+}
+
+@media (max-width: 768px) {
+    .homeLeft {
+        text-align: center;
+        margin: 80px 20px 30px 20px;
+    }
+    .homeRight {
+        margin: 0px 50px!important;
+    }
+}

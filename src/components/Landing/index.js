@@ -7,7 +7,7 @@ const LandingPage = () =>
     <Container>
       <Row>
     <h1>Journal Buddy</h1>
-    <h2>Making Journling a breeze</h2>
+    <h2>Interactive Journaling</h2>
     <h3>Lorem ipsum dolor amet cardigan cloud bread williamsburg cornhole 
       squid chillwave vexillologist tbh jianbing actually mustache street 
       art ullamco synth chicharrones. Locavore disrupt adaptogen aute 

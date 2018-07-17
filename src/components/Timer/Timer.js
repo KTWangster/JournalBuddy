@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+
+import * as routes from '../../constants/routes';
 import './Timer.css';
 
 // const CountdownCompleted = () => <span>Good Job!</span>;
@@ -22,12 +25,6 @@ export class Timer extends Component {
         this.startTimer = this.startTimer.bind(this);
     }
 
-    // tick() {
-    //     this.setState({
-    //         timeLeft: this.state.timeLeft -1
-    //     });
-    // }
-
     startTimer() {
         this.interval = setInterval(
             () => {
@@ -37,6 +34,7 @@ export class Timer extends Component {
                     }))
                 } else {
                     clearInterval(this.interval)
+                    // Submit user input and render next page 
                 }
             },
             1000
@@ -63,11 +61,17 @@ export class Timer extends Component {
     // }
     render() {
         const isPlaying = this.state.isPlaying;
-        return (
-            <div>
-                <h1>{this.state.timeLeft}</h1>
-                <button onClick={this.startTimer}>{isPlaying ? "Keep Going!" : "Start Journaling!"}</button>
-            </div>
-        )
+        if(this.state.timeLeft === 0){
+            return (
+                <Redirect to={routes.EXIT} />
+            );
+        } else {
+            return (
+                <div>
+                    <h1>{this.state.timeLeft}</h1>
+                    <button onClick={this.startTimer}>{isPlaying ? "Keep Going!" : "Start Journaling!"}</button>
+                </div>
+            );
+        } 
     }
 }
