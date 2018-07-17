@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
+// import Countdown from 'react-countdown-now';
 
 import withAuthorization from '../Session/withAuthorization';
 import { db } from '../../firebase';
 import { Container, Col, Row } from '../Grid';
 import { EntryBox } from '../EntryBox';
+import { Timer } from '../Timer';
 
 class HomePage extends Component {
   constructor(props) {
@@ -21,6 +23,8 @@ class HomePage extends Component {
     );
   }
 
+  
+
   render() {
     const { users } = this.state;
 
@@ -35,10 +39,14 @@ class HomePage extends Component {
           </div>
           </Row>
           <Row>
-            <EntryBox />
+            <EntryBox 
+              placeholder="Click the button to begin your 5-minute journal entry. If you're stuck, talk to the ChatBot for ideas!"
+            />
           </Row>
           <Row>
-          <button className="btn btn-warning contactBtn">Send</button>
+            <Timer />
+          </Row>
+          <Row>
           </Row>
           </Col>
         { !!users }

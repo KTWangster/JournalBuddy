@@ -7,6 +7,10 @@
 * activate Email/Password Sign-In Method in your Firebase App
 
 ``` npm i ```
+* Firebase
 ``` npm i firebase ```
-```npm i react-moment ```
-``` npm i moment --save```
+* MomentJS Date/Time
+``` npm i react-moment ```
+``` npm install moment --save ```
+* Countdown timer
+``` npm install react-countdown-now --save```

@@ -1,6 +1,6 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/database';
+import firebase from 'firebase';
+import 'firebase/auth/dist/index.cjs';
+import 'firebase/database/dist/index.cjs';
 
 const config = {
   apiKey: "AIzaSyA_AN70NdCWENV4CxqMWE9UXv3ECDg2s6Y",
