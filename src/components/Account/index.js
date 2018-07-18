@@ -5,16 +5,29 @@ import { PasswordForgetForm } from '../PasswordForget';
 import PasswordChangeForm from '../PasswordChange';
 import withAuthorization from '../Session/withAuthorization';
 
+import { Container, Row } from '../Grid';
+import './Account.css';
+
 const AccountPage = () =>
+  <div className="account-page">
+  <Container fluid>
+    <Row>  
   <AuthUserContext.Consumer>
     {authUser =>
-      <div>
-        <h1>Account: {authUser.email}</h1>
+      <div className="col-sm-12">
+        <h2>Account: {authUser.email}</h2>
+        <div>
         <PasswordForgetForm />
+        </div>
+        <div>
         <PasswordChangeForm />
+        </div>
       </div>
     }
   </AuthUserContext.Consumer>
+    </Row>
+  </Container>
+  </div>
 
 const authCondition = (authUser) => !!authUser;
 
