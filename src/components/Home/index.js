@@ -10,6 +10,8 @@ import { Container, Row } from '../Grid';
 import { EntryBox } from '../EntryBox';
 import { Timer } from '../Timer';
 
+import './Home.css';
+
 // const CountdownCompleted = () => <span>Good Job!</span>;
 // const renderer = ({ minutes, seconds, completed }) => {
 //   if (completed) {
@@ -43,7 +45,7 @@ class HomePage extends Component {
       <div className="home-page">
         <Container fluid>
           <Row>
-            <div className="homeLeft col-md-7">
+            <div className="homeLeft col-sm-8">
      
                 <div className="home-item col-md-12">
                   <h2>
@@ -67,7 +69,7 @@ class HomePage extends Component {
      
             </div>
 
-            <div className="homeRight col-md-5">
+            <div className="homeRight col-md-4">
               <Chatbot />   
               { !!users }
               {/* { !!users && <UserList users={users} /> } */}

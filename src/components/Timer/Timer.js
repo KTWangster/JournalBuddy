@@ -68,7 +68,7 @@ export class Timer extends Component {
         } else {
             return (
                 <div>
-                    <h3>{this.state.timeLeft} seconds</h3>
+                    <h3><span class="glyphicon glyphicon-time"></span> {this.state.timeLeft} seconds</h3>
                     <button onClick={this.startTimer}>{isPlaying ? "Keep Going!" : "Start Journaling!"}</button>
                 </div>
             );

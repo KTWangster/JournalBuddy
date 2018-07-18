@@ -1,10 +1,18 @@
 .homeLeft {
-    margin-top: 115px;
-    margin-bottom: 200px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    align-content: center; */
 }
+
+div.home-item {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+
+/* 
 
 .homeRight {
     margin-top: 140px;
@@ -14,7 +22,12 @@
 div.home-item {
     padding-top: 0px!important;
     padding-bottom: 0px!important;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+} */
 
 @media (max-width: 768px) {
     .homeLeft {
