@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=BenchNine|Roboto|Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=BenchNine|Roboto:100,400,700|Yellowtail');
 .app {
     margin: auto;
     color: #4a4a4a;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     text-align: center;
 }
 
@@ -25,9 +26,15 @@ h2 {
     font-size: 48px;
 }
 
+h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
 h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900 !important;
+    font-weight: 400;
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 0px;

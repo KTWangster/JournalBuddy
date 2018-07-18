@@ -1,6 +1,6 @@
 .aboutBar {
     background: linear-gradient(45deg, #7639EF, #1667F4, #54AEF2);
-    opacity: 0.9;
+    opacity: 0.8;
     border-radius: 0px;
     border: 0px;
     z-index: 1;
@@ -9,20 +9,10 @@
     padding: 30px;
 }
 
-
-/* h1 {
-    font-family: 'BenchNine', sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 96px;
-    background: -webkit-linear-gradient(90deg, #7639EF, #54AEF2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.col-md-12 {
+    padding: 60px 80px 60px 80px;
 }
 
-h2 {
-    font-family: 'BenchNine', sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 48px;
-} */
+.col-sm-12 {
+    padding: 60px 80px 60px 80px;
+}
