@@ -1,5 +1,8 @@
 ### Journal Buddy
 
+## Description
+Journal Buddy is a full-stack web application.
+
 ### Use your own Firebase Credentials
 
 * visit https://firebase.google.com/ and create a Firebase App

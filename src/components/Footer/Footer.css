@@ -1,11 +1,43 @@
 .footer {
-    min-height: 100px;
+    min-height: 150px;
     background-color: #fafafa;
     color: #4a4a4a;
+    letter-spacing: 0.5px;
     position: fixed;
     width: 100%;
     bottom: 0;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img.socialmedia {
+    width: 2em;
+    height: auto;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+img.socialmedia:hover {
+    animation: bounce 1s;
 }

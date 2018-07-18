@@ -18,7 +18,7 @@ const NavigationAuth = () =>
 <nav className="navbar navbar-inverse">
   <div className="container-fluid">
     <div className="navbar-collapse collapse">
-      <ul className="nav navbar-nav navbar-right">
+      <ul className="nav navbar-nav">
         <li className="landing"><Link to={routes.LANDING}><img className="logoImg img-responsive" src="assets/images/logo.png" alt=""/><p className="appTitle">Journal Buddy</p></Link></li>
         <li className="navbar-item"><Link to={routes.HOME}>Home</Link></li>
         <li className="navbar-item"><Link to={routes.ACCOUNT}>Account</Link></li>
