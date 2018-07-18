@@ -27,7 +27,7 @@
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: transparent;
-    color: white;
+    color: #303030;
 }
 
 li.navbar-item>a {
