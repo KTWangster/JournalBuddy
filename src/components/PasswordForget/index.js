@@ -6,7 +6,8 @@ import * as routes from '../../constants/routes';
 
 const PasswordForgetPage = () =>
   <div>
-    <h1>PasswordForget</h1>
+    <h2>Forgot your password?</h2>
+    <h4>No worries. Reset it here!</h4>
     <PasswordForgetForm />
   </div>
 
@@ -50,12 +51,14 @@ class PasswordForgetForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
+      <div>
         <input
           value={this.state.email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
         />
+      </div>
         <button disabled={isInvalid} type="submit">
           Reset My Password
         </button>

@@ -1,10 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=BenchNine|Roboto:100|Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=BenchNine|Roboto|Yellowtail');
 .app {
-    margin: 0px;
+    margin: auto;
     color: #4a4a4a;
     font-size: 1rem;
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 96px;
+    background: -webkit-linear-gradient(90deg, #7639EF, #54AEF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900 !important;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 

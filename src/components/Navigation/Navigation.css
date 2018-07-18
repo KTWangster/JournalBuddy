@@ -4,24 +4,23 @@
     border: 0px;
     z-index: 1;
     padding-top: 10px;
-}
-
-ul {
-    list-style: none;
+    min-height: 3.25rem;
+    display: block;
 }
 
 .navbar-nav {
     flex-direction: row;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+
+/* .navbar-inverse .navbar-nav>li>a {
     color: #303030;
     font-weight: 700;
     letter-spacing: 0.1em;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     padding: 0 20px 0 20px;
-}
+} */
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
@@ -30,26 +29,83 @@ ul {
     color: white;
 }
 
+li {
+    display: inline;
+}
+
+img.logoImg {
+    max-height: 4rem;
+    width: auto;
+    float: left;
+    padding-top: 2px;
+}
+
+p.appTitle {
+    color: #303030;
+    font-family: 'Yellowtail', cursive !important;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 42px;
+    float: left;
+    margin: 0px 10px;
+}
+
+li.landing {
+    display: inline-block;
+}
+
+button.btn-Nav {
+    float: right;
+    margin: 0px 20px 0px 20px !important;
+}
+
+
+/* li.btn-signIn,
+li.btn-signOut {
+    color: #ffffff;
+    font-weight: 700;
+    max-height: 4rem;
+    padding: 10px 50px 10px 50px;
+    background-color: #7639ef;
+    border-radius: 10px;
+    border: 2px solid #7639ef !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+li.btn-signIn:hover,
+li.btn-signOut:hover,
+{
+    color: #7639ef !important;
+    border: 2px solid #7639ef;
+    background-color: transparent !important;
+} */
+
+
+/* p.btnTitle {
+    color: #ffffff;
+    text-decoration: none;
+} */
+
+
+/* 
+
+
+
+
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
     background-color: transparent;
     color: white;
 }
 
-.navbar-inverse .navbar-toggle {
-    border-color: #ffffff;
-}
-
-.navbar-inverse .navbar-toggle:focus,
-.navbar-inverse .navbar-toggle:hover {
-    border-color: #ffffff;
-    background-color: transparent;
-}
-
 .navbar-inverse .navbar-collapse,
 .navbar-inverse {
     border-color: transparent;
 }
+
+
 
 @media (min-width: 768px) {
     .navbar-right {
@@ -90,7 +146,7 @@ ul {
         -webkit-transform: scale(0.75);
         transform: scale(0.75);
     }
-}
+} */
 
 
 /* .navbar-item {

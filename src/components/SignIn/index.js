@@ -6,9 +6,12 @@ import { PasswordForgetLink } from '../PasswordForget';
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
 
+import { Container, Row } from '../Grid';
+import './SignIn.css';
+
 const SignInPage = ({ history }) =>
   <div>
-    <h1>Log In</h1>
+    <h2>Log In</h2>
     <SignInForm history={history} />
     <PasswordForgetLink />
     <SignUpLink />
@@ -65,25 +68,37 @@ class SignInForm extends Component {
       email === '';
 
     return (
+      <Container fluid>
+        <Row>
+          <div className="col-sm-6">
       <form onSubmit={this.onSubmit}>
+        <div>
+        <h4>Your Email Address</h4>
         <input
           value={email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
         />
+        </div>
+        <div>
+        <h4>Your Password</h4>
         <input
           value={password}
           onChange={event => this.setState(updateByPropertyName('password', event.target.value))}
           type="password"
           placeholder="Password"
         />
+        </div>
         <button disabled={isInvalid} type="submit">
           Log In
         </button>
 
         { error && <p>{error.message}</p> }
       </form>
+      </div>
+      </Row>
+      </Container>
     );
   }
 }
