@@ -12,5 +12,5 @@ const ExitPage = () =>
             <button>Log Out</button>
           </div>
   </div>
- 
+
 export default ExitPage;

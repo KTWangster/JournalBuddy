@@ -40,34 +40,39 @@ class HomePage extends Component {
     const { users } = this.state;
 
     return (
-      <div>
-        <Container>
-          <Col className="homeleft" size="md-6">
+      <div className="home-page">
+        <Container fluid>
           <Row>
-            <div>
-            <Moment format="MM/DD/YYYY">{this.props.dateToFormat}</Moment>
-          </div>
+            <div className="homeLeft col-sm-7">
+     
+                <div className="col-sm-12">
+                  <h2>
+                    <Moment format="MM/DD/YYYY">{this.props.dateToFormat}</Moment>
+                  </h2>
+                </div>
+       
+                <div className="col-sm-12">
+                  <EntryBox 
+                  placeholder="Click the button to begin your 5-minute journal entry. If you're stuck, talk to the ChatBot for ideas!"
+                  />
+                </div>
+        
+                <div className="col-sm-12">
+                  {/* <Countdown date={Date.now() + 300000}
+                  renderer={renderer} /> */}
+                  {/* <Countdown date={Date.now() + 10000}
+                  renderer={renderer} /> */}
+                  <Timer />
+                </div>
+     
+            </div>
+
+            <div className="homeRight col-sm-5">
+              <Chatbot />   
+              { !!users }
+              {/* { !!users && <UserList users={users} /> } */}
+            </div>
           </Row>
-          <Row>
-            <EntryBox 
-              placeholder="Click the button to begin your 5-minute journal entry. If you're stuck, talk to the ChatBot for ideas!"
-            />
-          </Row>
-          <Row>
-            {/* <Countdown date={Date.now() + 300000}
-            renderer={renderer} /> */}
-            {/* <Countdown date={Date.now() + 10000}
-            renderer={renderer} /> */}
-            <Timer />
-          </Row>
-          <Row>
-          </Row>
-          </Col>
-          <Col className="homeRight" size="md-3">
-            <Chatbot />
-          </Col>
-        { !!users }
-        {/* { !!users && <UserList users={users} /> } */}
         </Container>
       </div>
     );

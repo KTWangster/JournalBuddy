@@ -1,6 +1,9 @@
 .homeLeft {
     margin-top: 115px;
     margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .homeRight {

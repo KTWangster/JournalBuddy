@@ -6,11 +6,11 @@ import { PasswordForgetLink } from '../PasswordForget';
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
 
-import { Container, Row } from '../Grid';
+// import { Container, Row } from '../Grid';
 import './SignIn.css';
 
 const SignInPage = ({ history }) =>
-  <div>
+  <div className="signin-page col-md-6">
     <h2>Log In</h2>
     <SignInForm history={history} />
     <PasswordForgetLink />
@@ -68,8 +68,9 @@ class SignInForm extends Component {
       email === '';
 
     return (
-      <Container fluid>
-        <Row>
+      <div className="signin-page">
+      {/* <Container fluid> */}
+        {/* <Row> */}
           <div className="col-sm-6">
       <form onSubmit={this.onSubmit}>
         <div>
@@ -90,15 +91,16 @@ class SignInForm extends Component {
           placeholder="Password"
         />
         </div>
-        <button disabled={isInvalid} type="submit">
+        <button disabled={isInvalid} type="submit" className="login-button">
           Log In
         </button>
 
         { error && <p>{error.message}</p> }
       </form>
       </div>
-      </Row>
-      </Container>
+      {/* </Row> */}
+      {/* </Container> */}
+      </div>
     );
   }
 }
