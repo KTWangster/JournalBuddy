@@ -18,6 +18,10 @@ nav.navbar {
 
 /* Left side of Navigation */
 
+.navbar-right {
+    display: inline-block;
+}
+
 img.logoImg {
     max-height: 4rem;
     width: auto;
