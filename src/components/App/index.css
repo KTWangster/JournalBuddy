@@ -7,6 +7,9 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     text-align: center;
+    overflow: auto;
+    margin-top: 3.25rem;
+    margin-bottom: 150px;
 }
 
 h1 {

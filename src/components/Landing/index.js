@@ -39,27 +39,31 @@ const LandingPage = () =>
       <div className="howTo col-sm-12 ">
         <h3>How does Journal Buddy work?</h3>
         <div className="col-sm-3">
-        <h4>FIRST</h4>
+        <span class="glyphicon glyphicon-flash"></span><br/>
+        <h4>REFLECT</h4>
           <p>
-            Journaling does this and that. 
+            Introspect. Think. Consider. Brainstorm.
           </p>
         </div>
         <div className="col-sm-3">
-        <h4>SECOND</h4>
+        <span class="glyphicon glyphicon-pencil"></span><br/>
+        <h4>WRITE</h4>
           <p>
-            Journaling does this and that. 
+            Jot down anything that comes to mind during 5 minutes. 
           </p>
         </div>
         <div className="col-sm-3">
-        <h4>THIRD</h4>
+        <span class="glyphicon glyphicon-refresh"></span><br/>
+        <h4>REPEAT</h4>
           <p>
-            Journaling does this and that. 
+            Repeat the process the next day...and the next...and the next...
           </p>
         </div>
         <div className="col-sm-3">
-        <h4>FOURTH</h4>
+        <span class="glyphicon glyphicon-star-empty"></span><br/>
+        <h4>REWARD</h4>
           <p>
-            Journaling does this and that. 
+          Reap the benefits of journaling and live a long and healthy life! 
           </p>
         </div>
       </div>

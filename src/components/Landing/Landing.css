@@ -1,3 +1,7 @@
+.landing-page {
+    overflow: auto;
+}
+
 .aboutBar {
     background: linear-gradient(45deg, #7639EF, #1667F4, #54AEF2);
     opacity: 0.8;

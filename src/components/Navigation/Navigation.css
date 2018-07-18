@@ -1,15 +1,23 @@
 .navbar {
     background: #ffffff;
     opacity: 0.9;
+    position: fixed;
+    top: 0;
     border: 0px;
     width: 100%;
     z-index: 1;
     padding-top: 10px;
     min-height: 3.25rem;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
