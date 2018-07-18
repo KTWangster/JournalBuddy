@@ -1,17 +1,21 @@
 textarea.form-control {
-    border: 3px solid #000000;
+    border: 7px solid #000000;
     border-image-source: linear-gradient(-65deg, #7639EF, #1667F4, #54AEF2);
     border-image-slice: 2;
     border-radius: 10px;
     background-color: #fff;
     color: #000000;
-    font-family: 'FontAwesome', sans-serif!important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px!important;
     box-shadow: none;
-    margin-top: 25px;
+    margin: 0px;
+    padding: 10px;
 }
 
 textarea.form-control:focus {
-    border: 3px solid #87a097;
-    border-radius: 10px;
+    border: 7px solid #87a097;
+    border-image-source: linear-gradient(65deg, #7639EF, #1667F4, #54AEF2);
+    border-image-slice: 2;
     box-shadow: none;
 }

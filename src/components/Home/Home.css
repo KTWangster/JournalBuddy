@@ -11,6 +11,11 @@
     align-content: right;
 }
 
+div.home-item {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+
 @media (max-width: 768px) {
     .homeLeft {
         text-align: center;

@@ -6,7 +6,7 @@ import withAuthorization from '../Session/withAuthorization';
 import { db } from '../../firebase';
 
 import { Chatbot } from '../Chatbot';
-import { Container, Col, Row } from '../Grid';
+import { Container, Row } from '../Grid';
 import { EntryBox } from '../EntryBox';
 import { Timer } from '../Timer';
 
@@ -43,21 +43,21 @@ class HomePage extends Component {
       <div className="home-page">
         <Container fluid>
           <Row>
-            <div className="homeLeft col-sm-7">
+            <div className="homeLeft col-md-7">
      
-                <div className="col-sm-12">
+                <div className="home-item col-md-12">
                   <h2>
                     <Moment format="MM/DD/YYYY">{this.props.dateToFormat}</Moment>
                   </h2>
                 </div>
        
-                <div className="col-sm-12">
+                <div className="home-item col-md-12">
                   <EntryBox 
                   placeholder="Click the button to begin your 5-minute journal entry. If you're stuck, talk to the ChatBot for ideas!"
                   />
                 </div>
         
-                <div className="col-sm-12">
+                <div className="home-item col-md-12">
                   {/* <Countdown date={Date.now() + 300000}
                   renderer={renderer} /> */}
                   {/* <Countdown date={Date.now() + 10000}
@@ -67,7 +67,7 @@ class HomePage extends Component {
      
             </div>
 
-            <div className="homeRight col-sm-5">
+            <div className="homeRight col-md-5">
               <Chatbot />   
               { !!users }
               {/* { !!users && <UserList users={users} /> } */}
