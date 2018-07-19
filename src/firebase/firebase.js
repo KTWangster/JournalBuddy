@@ -17,10 +17,8 @@ if (!firebase.apps.length) {
 
 const db = firebase.database();
 const auth = firebase.auth();
-// const googleProvider = new firebase.auth.GoogleAuthProvider();
 
 export {
   db,
   auth,
-  // googleProvider,
 };

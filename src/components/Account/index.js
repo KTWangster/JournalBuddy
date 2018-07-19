@@ -7,6 +7,7 @@ import withAuthorization from '../Session/withAuthorization';
 
 import { Container, Row } from '../Grid';
 import './Account.css';
+import { userInfo } from 'os';
 
 const AccountPage = () =>
   <div className="account-page">

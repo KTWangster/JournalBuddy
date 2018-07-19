@@ -16,13 +16,18 @@ nav.navbar {
 }
 
 li>a {
-    color: #303030
+    color: #303030;
+    margin-right: 15px;
 }
 
 li>a:hover,
 li>a:focus {
     color: #303030;
     text-decoration: none;
+}
+
+li.btn-Nav>button {
+    margin-top: 0px!important;
 }
 
 
@@ -33,10 +38,11 @@ li>a:focus {
 }
 
 img.logoImg {
-    max-height: 4rem;
+    max-height: 5rem;
+    margin-right: 10px;
     width: auto;
     float: left;
-    padding-top: 2px;
+    padding-top: 6px;
 }
 
 li.appName {

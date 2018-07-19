@@ -28,6 +28,15 @@ h3.about {
     letter-spacing: 4px;
 }
 
+.app-welcome {
+    text-align: center;
+}
+
+.app-slogan {
+    display: inline-block;
+    float: none;
+}
+
 h3.howWork {
     background: linear-gradient(90deg, #7639EF, #1667F4, #54AEF2);
     -webkit-background-clip: text;
@@ -39,4 +48,16 @@ span.glyphicon {
     background: linear-gradient(65deg, #7639EF, #1667F4, #54AEF2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+button.inverted-button {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff!important;
+}
+
+button.inverted-button:hover {
+    color: #ffffff!important;
+    border: 3px solid #ffffff!important;
+    /* background-color: transparent !important; */
 }

@@ -45,7 +45,7 @@ const NavigationNonAuth = () =>
         </div>
       </ul>
       <ul className="nav navbar-nav navbar-right">
-        <li className="navbar-item"><Link to={routes.SIGN_IN}>LOGGGIN</Link></li>
+        <li className="navbar-item"><Link class-name="login-button" to={routes.SIGN_IN}>Log In</Link></li>
       </ul>
     </div>
   </div>
