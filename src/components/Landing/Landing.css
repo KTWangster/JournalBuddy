@@ -10,7 +10,7 @@
     z-index: 1;
     width: 100%;
     color: #fff;
-    padding: 30px;
+    padding: 40px;
 }
 
 .col-md-12 {
@@ -35,6 +35,10 @@ h3.about {
 .app-slogan {
     display: inline-block;
     float: none;
+}
+
+p.aboutParagraphs {
+    padding: 0px 100px;
 }
 
 h3.howWork {

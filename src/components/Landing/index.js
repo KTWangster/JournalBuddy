@@ -13,24 +13,25 @@ const LandingPage = () =>
         <h1>To Happiness</h1>
         <div className="app-slogan col-md-6">
         <p>
-        There’s no easier way to make yourself happier! 
-        Research shows that consistent self-reflection and positive thinking 
-        have a huge impact on happiness. Here at Journal Buddy, our mission 
-        is to make self-reflection and positive thinking effortless and 
-        fun so that you can reap all the benefits without lining your 
-        bookshelves with rows of empty and forgotten journals! 
+        A simple and effective way to create happiness! 
+        <br></br><br></br>
+        
         </p>
         </div>
       </div>
       </Row>
       <Row>
       <div className="aboutBar col-md-12">
-      <h3 className="about">Why 5-Minutes?</h3>
+      <h3 className="about">Why 5 Minutes?</h3>
       <br/>
         <p>
-        In about five minutes per day, you can establish a positive pattern of 
-        thinking and acting when it really matters. It’s the ideal time 
-        window that allows for minimal effort.
+        Research shows that consistent self-reflection and positive thinking 
+        have a huge impact on happiness. 
+        <br></br><br></br>
+        In about five minutes each day, you can establish a positive pattern of 
+        thinking and acting when it really matters.
+        <br></br><br></br>
+        It’s the ideal time window that allows for minimal effort.
         </p>
       </div>
     </Row>
@@ -87,7 +88,7 @@ const LandingPage = () =>
       <div className="aboutBar col-md-12">
       <h3 className="about">Why Journal Buddy?</h3>
       <br/>
-        <p>
+        <p className="aboutParagraphs">
         Part of what makes humans so special, is that we get to choose what and how we think. 
         Journal Buddy helps you optimize your thinking patterns, by prompting you to write 
         and reflect on your life positively. We even have our trusted chatbot (we call him Buddy), 
@@ -95,18 +96,20 @@ const LandingPage = () =>
         Start a conversation with Buddy, and see what happens. 
         <br/><br/><br/>
         If you’ve given traditional journal-keeping a go, then you probably know it’s no easy 
-        habit to keep. That’s why, here at Journal Buddy, it’s our goal to make journal-keeping 
-        everyone’s easiest and favourite habit to form and maintain. By making journal 
+        habit to keep. Journal Buddy makes journal-keeping an easy habit habit to form and maintain. By making journal 
         keeping fun and engaging, you’ll be amazed by how fast you can boost your well-being. 
         <br/><br/><br/>
         Wherever you go, have full access to your personal journal. Read, write, and 
-        reflect! We believe that self-reflection should be more than just thinking about 
+        reflect! Self-reflection should be more than just thinking about 
         what you had for breakfast. With Journal Buddy, you will have access to each of your 
         journal entries, neatly organized, and always available for your perusal. We even show 
         you what you wrote a year ago today. Still miss the idea of a traditional hardback 
         journal? We have good news! Starting at just $5.99, receive a printed hardback 
         copy of your diary. Choose the font, format, and design, and let us do the rest. 
-        So what are you waiting for? Sign up and start your journaling journey today! 
+        <br></br><br></br>
+        Journal Buddy makes self-reflection and positive thinking effortless.
+        <br></br>
+        So what are you waiting for? Begin journaling today! 
         </p>
         <br/>
         <button className="inverted-button">Get Started</button>

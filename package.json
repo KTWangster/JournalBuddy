@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.2",
-    "firebase": "^5.2.0",
+    "firebase": "^5.5.6",
     "flexbox": "0.0.3",
     "moment": "^2.22.2",
     "react": "^16.4.0",

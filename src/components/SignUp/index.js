@@ -49,7 +49,7 @@ class SignUpForm extends Component {
     auth.doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
 
-        // Create a user in your own accessible Firebase Database too
+        // Also creates user in own accessible Firebase Database
         db.doCreateUser(authUser.user.uid, username, email)
           .then(() => {
             this.setState(() => ({ ...INITIAL_STATE }));

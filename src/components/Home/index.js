@@ -1,33 +1,38 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
-// import Countdown from 'react-countdown-now';
 
 import withAuthorization from '../Session/withAuthorization';
 import { db } from '../../firebase';
+import 'firebase/database';
+
 
 import { Chatbot } from '../Chatbot';
 import { Container, Row } from '../Grid';
 import { EntryBox } from '../EntryBox';
+import Entry from '../Entry/Entry';
+import EntryForm from '../EntryForm/EntryForm';
 import { Timer } from '../Timer';
 
-import './Home.css';
+// import firebase from 'firebase/app';
+// import { config } from '../../firebase';
 
-// const CountdownCompleted = () => <span>Good Job!</span>;
-// const renderer = ({ minutes, seconds, completed }) => {
-//   if (completed) {
-//     // Render a complete state
-//     return <CountdownCompleted />;
-//   } else {
-//     return <span>{minutes}:{seconds}</span>;
-//   }
-// };
+import './Home.css';
 
 class HomePage extends Component {
   constructor(props) {
     super(props);
+    this.addEntry = this.addEntry.bind(this);
+    
+    // this.app = firebase.initializeApp(config);
+    // this.database = this.app.database().ref().child('entries');
 
+    // Sets up React state of component
     this.state = {
-      users: {}
+      users: {},
+      entries: [
+        { id: 1, entryContent: "Entry 1 here!" },
+        { id: 2, entryContent: "Entry 2 here!" },
+      ],
     };
   }
 
@@ -35,9 +40,38 @@ class HomePage extends Component {
     db.onceGetUsers().then(snapshot =>
       this.setState(() => ({ users: snapshot.val() }))
     );
-  }
+    }
 
-  
+    addEntry(entry){
+      // Pushes the entry onto the entries array.
+      const previousEntries = this.state.entries;
+      previousEntries.push({ id: previousEntries.length + 1, entryContent: entry });
+      
+      this.setState({
+        entries: previousEntries
+      });
+    }
+    
+// componentWillMount(){
+//     const previousEntries = this.state.entries;
+
+//     // DataSnapshot
+//     db.onceEntryMade().then(snapshot => {
+//       previousEntries.push({
+//         id: snapshot.key,
+//         entryContent: snapshot.val().entryContent,
+//       })
+
+//       this.setState({
+//         entries: previousEntries
+//       })
+//     })
+//   }
+
+//   addEntry(entry){
+//     this.db.push().set({ entryContent: entry});
+//   }
+
   render() {
     const { users } = this.state;
 
@@ -52,21 +86,48 @@ class HomePage extends Component {
                     <Moment format="MM/DD/YYYY">{this.props.dateToFormat}</Moment>
                   </h2>
                 </div>
-       
+
                 <div className="home-item col-md-12">
-                  <EntryBox 
-                  placeholder="Click the button to begin your 5-minute journal entry. If you're stuck, talk to the ChatBot for ideas!"
+                  <EntryBox addEntry={this.addEntry} placeholder="Click the button to begin your 5-minute journal entry. If you're stuck, talk to the ChatBot for ideas!"
                   />
                 </div>
         
                 <div className="home-item col-md-12">
-                  {/* <Countdown date={Date.now() + 300000}
-                  renderer={renderer} /> */}
-                  {/* <Countdown date={Date.now() + 10000}
-                  renderer={renderer} /> */}
                   <Timer />
                 </div>
-     
+
+                <div className="home-item col-md-12">
+                  <div className="notesHeader">
+                    <div className="heading">Previous Entries</div>
+                  </div>
+
+                  <div className="entriesBody">
+                    {
+                      this.state.entries.map((entry) => {
+                        return (
+                        <Entry entryContent={entry.entryContent} entryId={entry.id} key={entry.id} />
+                        )
+                      })                     
+                    }
+                  </div>
+
+                  <div className="entriesFooter">
+                    <EntryForm addEntry={this.addEntry} />
+                  </div>
+                  
+
+
+                  {/* <div className="entriesBody"> 
+                    {
+                      this.state.entries.map((entry) => {
+                        return (
+                        <Entry entryContent={entry.entryContent} entryId={entry.id} key={entry.id} />
+                        )
+                      })
+                    }
+                  </div> */}
+
+                </div>
             </div>
 
             <div className="homeRight col-md-4">
