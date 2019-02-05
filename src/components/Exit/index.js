@@ -1,5 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Exit.css';
+
+import * as routes from '../../constants/routes';
+import SignOutButton from '../SignOut';
 
 const ExitPage = () =>
   <div className="exit-page">
@@ -8,8 +12,8 @@ const ExitPage = () =>
           <h2>See you tomorrow.</h2>
         </div>
           <div className="col-md-6 exit-buttons">
-            <button>Return Home</button>
-            <button>Log Out</button>
+            <button><Link to={routes.LANDING}>Return Home</Link></button>
+            <SignOutButton />
           </div>
   </div>
 

@@ -51,26 +51,6 @@ class HomePage extends Component {
         entries: previousEntries
       });
     }
-    
-// componentWillMount(){
-//     const previousEntries = this.state.entries;
-
-//     // DataSnapshot
-//     db.onceEntryMade().then(snapshot => {
-//       previousEntries.push({
-//         id: snapshot.key,
-//         entryContent: snapshot.val().entryContent,
-//       })
-
-//       this.setState({
-//         entries: previousEntries
-//       })
-//     })
-//   }
-
-//   addEntry(entry){
-//     this.db.push().set({ entryContent: entry});
-//   }
 
   render() {
     const { users } = this.state;

@@ -11,3 +11,12 @@ div.exit-page {
     align-items: center;
     flex-direction: column;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #7638ef;
+    text-decoration: none;
+}

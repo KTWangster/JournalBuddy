@@ -36,7 +36,7 @@ class EntryForm extends Component{
                 value={this.state.newEntryContent}
                 onChange={this.handleUserInput} />
                 <button className="entryButton" 
-                onClick={this.writeEntry}>Add ENTRYYY</button>
+                onClick={this.writeEntry}>Add Another Entry</button>
             </div>
         )
     }

@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () =>
   <footer className="footer text-center navbar-fixed-bottom">
     <div>
-    © 2018 Katie Wang
+    © 2019 Katie Wang
     </div>
       <div>
         <a href={"https://www.linkedin.com/in/ktwang/"}>
