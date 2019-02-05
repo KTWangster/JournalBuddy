@@ -74,14 +74,12 @@ const LandingPage = () =>
         </div>
       </div>
       <div className="col-md-12">
-      {/* <button
-    type="button"
-    // onClick={}
-  >
-  <Link to={routes.LANDING}>JOURNAL BUDDY</Link>
-    Get Started!
-  </button> */}
-    <button>Get Started</button>
+      <button
+        type="button"
+      >
+      <Link to={routes.SIGN_IN}>GET STARTED!</Link>
+      </button>
+    {/* <button>Get Started</button> */}
       </div>
     </Row>
     <Row>
@@ -112,7 +110,7 @@ const LandingPage = () =>
         So what are you waiting for? Begin journaling today! 
         </p>
         <br/>
-        <button className="inverted-button">Get Started</button>
+        <button className="inverted-button"><Link to={routes.SIGN_IN}>GET STARTED!</Link></button>
       </div>
     </Row>
     </Container>
