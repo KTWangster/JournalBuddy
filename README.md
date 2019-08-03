@@ -8,7 +8,7 @@ The app uses a Dialogflow chatbot to provide users with journaling ideas.
 
 After signing up, users are provided five minutes to type in a journal entry. The entry is then archived and, overtime, the user will be able to access their collection of entries.
 
-
+Packages:
 ``` npm i ```
 * Firebase
 ``` npm i firebase ```
